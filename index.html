@@ -3,12 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>rock paper scissor</title>
+    <title>rpsui</title>
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="script.js" ></script>
 </head>
 <body>
-    <div id="h1"><h1>ROCK PAPER SCISSOR GAME ON CONSOLE</h1></div>
-    <div id="h2"><h2>PAPER BEATS ROCK, ROCK BEATS SCISSOR, SCISSOR BEATS PAPER</h2></div>
-    <script src="script.js"></script>
+    <div class="head"><h1>ROCK-PAPER-SCISSOR</h1></div>
+    <div class="start">
+        <div>first to 5 wins:-</div>
+        <div>green is player choice</div>
+        <div>red is computer choice</div>
+        <div>if a draw, no red highlight. no points</div>
+    <div class="btns">
+       <button class="rock"><img src="./images/ChatGPT Image May 23, 2025, 02_10_17 AM.png" alt="rock"></button>
+       <button class="scissor"><img src="./images/ChatGPT Image May 23, 2025, 02_22_40 AM.png" alt="scissor"></button>
+       <button class="paper"><img src="./images/ChatGPT Image May 23, 2025, 02_26_20 AM.png" alt="paper"></button>
+    </div>
+    <div class="text">
+        <div>Computer Score: <span id="cscore">0</span></div>
+        <div>Player Score: <span id="pscore">0</span></div>
+        <div id="round">Round: 1</div>
+        
+    </div>
+    </div>
+    <div class="menu">
+        <button class="startbtn">START THE GAME</button>
+    </div>
+    <div class="win">
+        <h2>YOU WIN</h2>
+        <div class="rest"><button class="res">restart</button></div>
+    </div>
+    <div class="loss">
+        <h2>YOU LOSE</h2>
+        <div class="rest"><button class="res">restart</button></div>
+    </div>
 </body>
 </html>
